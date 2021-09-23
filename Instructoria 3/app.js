@@ -1,0 +1,16 @@
+var numero =prompt('De que numero desea la tabla?', '');
+document.write("<h1 align='center'>Tabla de multiplicarde" +numero+"</h1><hr>");
+document.write("<table align='center' border='1'>");
+document.write("<caption>Tabla del numero</caption>");
+document.write("<tr><td>Numero</td><td> * </td><td> n = </td><td>1 ....n</td></tr>");
+document.write("<tr><td>"+numero+"</td><td> * </td><td> 1 = </td><td> "+(numero*1)+"</td></tr>");
+document.write("<tr><td>"+numero+"</td><td> * </td><td> 2 = </td><td> "+(numero*2)+"</td></tr>");
+document.write("<tr><td>"+numero+"</td><td> * </td><td> 3 = </td><td> "+(numero*3)+"</td></tr>");
+document.write("<tr><td>"+numero+"</td><td> * </td><td> 4 = </td><td> "+(numero*4)+"</td></tr>");
+document.write("<tr><td>"+numero+"</td><td> * </td><td> 5 = </td><td> "+(numero*5)+"</td></tr>");
+document.write("<tr><td>"+numero+"</td><td> * </td><td> 6 = </td><td> "+(numero*6)+"</td></tr>");
+document.write("<tr><td>"+numero+"</td><td> * </td><td> 7 = </td><td> "+(numero*7)+"</td></tr>");
+document.write("<tr><td>"+numero+"</td><td> * </td><td> 8 = </td><td> "+(numero*8)+"</td></tr>");
+document.write("<tr><td>"+numero+"</td><td> * </td><td> 9 = </td><td> "+(numero*9)+"</td></tr>");
+document.write("<tr><td>"+numero+"</td><td> * </td><td> 10 = </td><td> "+(numero*10)+"</td></tr>");
+document.write("</table>");
