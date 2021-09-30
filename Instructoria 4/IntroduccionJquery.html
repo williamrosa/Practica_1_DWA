@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Introduccion a jquery</title>
+    <script>
+        $(document).ready(function(){
+            $("#carrete img ").hide();
+        });
+        //$(document).ready(function(){
+            //$("body").hide().fadeIn(1900);
+        //});
+        $(document).ready(function(){
+            $("#ads").width(500).height(200).text("Ya hicistes la evaluacion docente?").hide().fadeIn(1000);
+        });
+    </script>
+    <style>
+        #ads{
+            background-color: orangered;
+            color: black;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hola estudiantes de DWA</h1>
+    <p>Welcome to learn jQuery</p>
+    <img src="img/img1.jpg" alt="" width="35%">
+
+    <div id="ads">
+        Ya puedes hacer la evaluacion docente 
+    </div>
+
+    <div id="carrete">
+        <img src="img/img5.jpg" width="250" height="175" alt="">
+        &nbsp;
+        <img src="img/img2.jpg" width="250" height="175" alt="">
+        &nbsp;
+        <img src="img/img3.jpg" width="250" height="175" alt="">
+        &nbsp;
+        <img src="img/img4.jpg" width="250" height="175" alt="">
+    </div>
+    <!--JS-->
+    <script>
+        //var imagenes=document.querySelectorAll("#carrete");
+        //for (let index = 0; index < imagenes.length; index++) {
+            //imagenes[index].style.visibility="hidden";
+            
+        //}
+
+        //var anuncio = document.getElementById("ad");
+        //anuncio.style.width="500px";
+        //anuncio.style.height="300px";
+
+
+
+    </script>
+</body>
+</html>
