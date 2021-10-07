@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM jQuery</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        function validar() {
+            var nickname=document.getElementById("nickname").value;
+            var nombre=document.getElementById("nombre").value;
+            var apellido=document.getElementById("apellido").value;
+            if (nickname == "") {
+                $("#nickname").after("<strong style=\"color:red;\">Este campo es obligatorio!</strong>");                
+            }else if(nombre ==""){
+                $("#nombre").after("<strong style='color:red';>Este campo es obligatorio!</strong>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="nickname" placeholder="Nickname"><br><br>
+        <input type="text" id="nombre" placeholder="Nombre"><br><br>
+        <input type="text" id="apellido" placeholder="Apellido"><br><br>
+        <input type="button" value="Enviar datos" onclick="validar();">
+    </form>
+</body>
+</html>

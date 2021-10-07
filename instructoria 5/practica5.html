@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myContent{
+            background-color: chartreuse;
+        }
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //alert($("#datos h2").html());
+            //$("#datos").html("<p>Bienvenidos a la practica 5 - DWA </p>");
+            $("#datos").append("<p>Texto que se agrega abajo</p>");
+            $("#datos").prepend("<p>Texto que se agrega arriba</p>");
+            $("#datos").before("<p>Agrega contenido antes de donde apuntamos </p>");
+            $("#datos").after("<p>Agrega contenido despues de donde apuntamos </p>");
+            //agregar funcion text
+            //$("#datos").text("<p>Utilizando la funcion TEXT </p>");
+            $("#datos h2").text("Reemplazando text")
+        });
+    </script>
+</head>
+<body>
+    <div id="content">
+        <div id="datos" class="myContent">
+            <h2>Mis datos!</h2>
+            <p>Parrafo</p>
+        </div>
+    </div>
+</body>
+</html>
