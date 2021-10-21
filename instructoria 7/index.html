@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiando atributos css con jQuery</title>
+    <style>
+        .linkdestacaCursos{
+            background-color:greenyellow;
+            color : purple;
+            
+        }
+        .linkdestacaInfo{
+            background-color:purple;
+            color : greenyellow;
+            font-weight: bold;
+            margin-left: 25px;
+            
+        }
+        a{
+            display:block;
+            margin-bottom:20px;
+            font-size:24px;
+        }
+        table{
+            text-align:center;
+            border:none;
+        }
+        td{
+            border:none;
+        }
+        #contieneEnlaces {
+            position: absolute;
+            left: 31px;
+            top: 65px;
+            width: 400px;
+            height: 649px;
+            z-index: 1;
+            padding-top:100px;
+        }
+    </style>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //$("a[href='http://']").addClass("linkdestacaCursos");
+            document.getElementById("cursos").addEventListener("click", resaltaCursos, false);
+            document.getElementById("otros").addEventListener("click", resaltaOtros, false);
+            
+        });
+        function resaltaCursos() {
+            //$(".otros").removeClass("linkdestacaInfo");
+            //$(".cursos").addClass("linkdestacaCursos");
+            $(".cursos").toggleClass("linkdestacaCursos");
+        }
+        function resaltaOtros() {
+            //$(".cursos").removeClass("linkdestacaCursos");
+            ///$(".otros").addClass("linkdestacaInfo");
+            $(".otros").toggleClass("linkdestacaInfo");
+        }
+    </script>
+</head>
+<body>
+    <div id="contieneEnlaces">
+        <a href="https://www.friv.com/" target="_blank" class="otros">
+        Juegos FRIV
+        </a>
+        <a href="https://www.univo.edu.sv/" target="_blank" class="cursos">
+        Univo Sitio Oficial
+        </a>
+        <a href="https://quizizz.com/" target="_blank" class="cursos">
+        QUIZIZZ
+        </a>
+        <a href="Practica anterior/index.html" target="_blank">
+            Eliminar contenido con jQuery
+        </a>
+        <a href="http://www.google.com/" target="_blank" class="otros">
+            Google
+        </a>
+        <a href="#" target="_blank">
+            Mas contenido...
+        </a>
+    </div>
+    <table width="100%" border="1">
+        <tr>
+            <td>
+                Cursos destacados&nbsp;&nbsp;
+                <input type="button" value="Cursos" id="cursos">
+            </td>
+            <td>
+                Cursos Varios&nbsp;&nbsp;
+                <input type="button" value="Otros" id="otros">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
